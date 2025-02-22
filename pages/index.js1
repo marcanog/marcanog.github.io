@@ -1,0 +1,61 @@
+import Head from "next/head";
+
+export default function Home() {
+    return (
+        <div className="min-h-screen bg-gray-100 text-gray-900">
+            <Head>
+                <title>Georgelys Marcano - Frontend Developer</title>
+                <meta name="description" content="Portafolio de Georgelys Marcano, desarrolladora Frontend." />
+                <link rel="icon" href="/favicon.ico/" />
+            </Head>
+
+            <main className="max-w-4xl mx-auto p-6">
+                <header className="text-center my-10">
+                    <h1 className="text-4xl font-bold">Georgelys Marcano</h1>
+                    <p className="text-xl text-gray-600">Frontend Developer | Vue.js | Astro</p>
+                </header>
+
+                <section className="mb-10">
+                    <h2 className="text-2xl font-semibold mb-4">Sobre mí</h2>
+                    <p>
+                        Desarrolladora front-end con más de 4 años de experiencia creando interfaces web atractivas y funcionales.
+                        Especializada en Vue.js, Astro y diseño responsivo.
+                    </p>
+                </section>
+
+                <section className="mb-10">
+                    <h2 className="text-2xl font-semibold mb-4">Habilidades Técnicas</h2>
+                    <ul className="grid grid-cols-2 gap-4">
+                        <li>HTML5 / CSS3 / JavaScript</li>
+                        <li>Vue.js / Astro.js</li>
+                        <li>Tailwind CSS / Bootstrap</li>
+                        <li>Figma / Adobe InDesign</li>
+                        <li>WordPress / OpenCart</li>
+                        <li>Scrum / Kanban</li>
+                    </ul>
+                </section>
+
+                <section className="mb-10">
+                    <h2 className="text-2xl font-semibold mb-4">Experiencia Laboral</h2>
+                    <ul>
+                        <li className="mb-4">
+                            <h3 className="font-bold">Universidad de Margarita</h3>
+                            <p>Coordinadora de Programas Virtuales y Desarrolladora Web (2020 - 2022)</p>
+                            <p>Optimización del portal web, incrementando el tráfico en un 30%.</p>
+                        </li>
+                        <li className="mb-4">
+                            <h3 className="font-bold">Leiros</h3>
+                            <p>Programadora (2019 - 2020)</p>
+                            <p>Desarrollo de módulos web con Laravel y Bootstrap.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <footer className="text-center mt-10">
+                    <p>📧 <a href="mailto:georgelysmarcanob@gmail.com" className="text-blue-600">georgelysmarcanob@gmail.com</a></p>
+                    <p>🔗 <a href="https://portgeorgelysmarcano.jimdofree.com/" className="text-blue-600">Portfolio</a></p>
+                </footer>
+            </main>
+        </div>
+    );
+}
